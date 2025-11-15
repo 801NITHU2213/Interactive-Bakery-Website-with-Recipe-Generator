@@ -1,0 +1,248 @@
+body {
+margin: 0;
+align-self: center; text-align: center;
+background-image: url("../weeebbb/bi.jpg"); height : 100vh;
+background-size: cover; background-attachment: fixed; overflow: auto;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.nav {
+overflow: hidden; background-color: plum; text-align: center; align-self: right; padding: 77px;
+}
+
+.nav a { float: left;
+color: powderblue; text-align: center; padding: 14px 70px; text-decoration: none; font-size: 17px;
+align-self: left;
+text-align: center; font-size: large;
+
+}
+
+.nav a:hover { background-color: #ddd; color: goldenrod;
+
+}
+.centre {
+padding: 70px 0; text-align: center
+
+}
+
+.container { display: flex;
+align-items: center;
+}
+
+.paragraph {
+flex: 1; padding: 20px;
+font-style: oblique; color: darkred ; font-size: x-large;
+}
+
+.image {
+max-width: 50%; margin-left: 20px;
+filter: grayscale(50%) contrast(120%) brightness(90%) saturate(120%); box-sizing: border-box;
+}
+.tag-cloud {
+display: inline-block; color: black;
+padding: 8px 20px; border-radius: 25px;
+background-color: peachpuff; margin-top: 8px;
+font-style: oblique;
+}
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); max-width: 300px;
+margin: auto;
+text-align: center; font-family: arial;
+}
+.price { color: grey;
+font-size: 22px;
+}
+
+.card button { border: none; outline: 0; padding: 12px; color: white;
+background-color: #000; text-align: center; cursor: pointer; width: 100%;
+font-size: 18px;
+}
+
+.card button:hover { opacity: 0.7;
+}
+
+@media (max-width: 991px){
+
+html{
+font-size: 55%;
+}
+
+.header{ padding: 2rem;
+}
+
+section{ padding: 2rem;
+}
+
+}
+
+@media (max-width: 768px){ #menu-btn{
+display: inline-block;
+}
+
+.fa-times{
+transform: rotate(180deg);
+}
+.header .navbar{ position: absolute; top: 99%;
+left: 0; right: 0; background: var(--white);
+border-top: .1rem solid var(--secondary); clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.header .navbar.active{
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header .navbar a{ display: block; margin: 2rem;
+}
+
+.home .slide .content{ width: 40rem;
+}
+
+.home .slide .content h3{ font-size: 4rem;
+}
+
+}
+
+@media (max-width: 450px){
+
+html{
+font-size: 50%;
+}
+
+.home .slide .content h3{ font-size: 3rem;
+}
+
+}
+
+* {
+box-sizing: border-box;
+}
+
+/* Style inputs */ input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc; margin-top: 6px; margin-bottom: 16px; resize: vertical;
+background-color: white;
+}
+
+input[type=submit] { background-color: white; color: white;
+padding: 12px 20px; border: none; cursor: pointer;
+background-color: purple;
+}
+
+input[type=submit]:hover { background-color: purple;
+}
+
+
+.container {
+border-radius: 5px; padding: 10px; background-color: plum;
+}
+
+/* Create two columns that float next to eachother */
+.column { float: left; width: 50%;
+margin-top: 6px; padding: 20px; background-color: plum;
+}
+
+.row:after { content: ""; display: table; clear: both;
+background-color: plum;
+
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+ 
+.column, input[type=submit] { width: 100%;
+margin-top: 0;
+}
+.con {
+border: 2px solid #ccc; background-color: #eee; border-radius: 5px; padding: 16px;
+margin: 16px 0
+}
+
+.con::after {
+content: ""; clear: both; display: table;
+}
+
+.con img { float: left;
+margin-right: 20px; border-radius: 50%;
+}
+
+.con span {
+font-size: 20px; margin-right: 15px;
+}
+
+}
+/* Style for the container holding the slideshow */
+.slideshow-container { position: relative; max-width: 100%; margin: auto;
+border: 1px solid black; /* Optional: Add border for visual separation */ padding: 10px; /* Optional: Add padding for spacing */
+background-image: url("../Web/bo.jpg");
+}
+.text {
+font-size: x-large;
+}
+body {
+background-color: #f0f0f0;
+}
+
+.label-container { position: relative;
+ 
+width: 200px; height: 100px; overflow: hidden;
+}
+
+.label {
+position: absolute; top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) rotate(-45deg); padding: 20px;
+background-color: palevioletred; color: #ffffff;
+font-size: 24px; font-weight: bold; border-radius: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+opacity: 0;
+animation: fadeIn 1s ease-out 0.5s forwards;
+}
+
+@keyframes fadeIn { from {
+opacity: 0;
+transform: translate(-50%, -50%) rotate(-45deg) scale(0.5);
+}
+to {
+opacity: 1;
+transform: translate(-50%, -50%) rotate(-45deg) scale(1);
+}
+}
+.container { position: relative; max-width: 800px; margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content { position: absolute; bottom: 0;
+background: rgb(0, 0, 0); /* Fallback color */
+background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */ color: #f1f1f1;
+width: 100%; padding: 20px;
+}
+ 
+.c {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s;
+width: 40%;
+border-radius: 5px;
+}
+
+.c:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+border-radius: 5px 5px 0 0;
+}
+
+.contain {
+padding: 2px 16px;
+}
+.c-contain {
+display: flex; /* Use flexbox layout */ flex-direction: row
+}
+
+.c {
+width: 200px; /* Set width of each card height: 300px; /* Set height of each card */
+background-color: #f0f0f0; /* Example background color * border: 1px solid #ccc; /* Example border */
+margin-right: 10px; /* Add margin between cards */
+}
